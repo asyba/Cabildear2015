@@ -12,11 +12,11 @@
     <title>Cabildear</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styleCustom.css" rel="stylesheet">
+    <link href="<?php getURL('/lib/css/bootstrap.min.css');?>" rel="stylesheet">
+	<link href="<?php getURL('/lib/css/styleCustom.css');?>" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/thumbnail-gallery.css" rel="stylesheet">
-
+    <link href="<?php getURL('/lib/css/thumbnail-gallery.css');?>" rel="stylesheet">
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>           
-				<a href="http://cabildear.org"><img src="./img/logo2.png" alt="Smiley face" width="400" height="120"></a>
+				<a href="<?php getURL('/');?>"><img src="<?php getURL('/lib/img/logo2.png');?>" alt="Smiley face" width="400" height="120"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -62,66 +62,38 @@
                         <a href="#">Pedir audencia</a>
                     </li>
                 </ul>
+				
+				<?php
+
+                /* Verifica si se ha iniciado sesion */
+                if (!isset($_SESSION['name'])) {
+                ?>
+
+                <ul class="nav navbar-nav wp" style="">
+                    <li style="padding-top: 30px;">
+                        <a href="<?php getURL('/login/twitter');?>"><li style="width= 10">LOGGUEAR CON TWITTER</li></a>
+                    </li>
+                </ul>
+
+                <?php
+
+                }
+                else { ?>
+                    <ul class="nav navbar-nav wp" style="">
+                    <li style="padding-top: 30px;">
+                        <a href="#"><?php echo $_SESSION['name']; ?></a>
+                    </li>
+                </ul>
+
+                <?php 
+
+                }
+
+                ?>
+				
             </div>
 
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
-	<a href="http://cabildear.org/form.php"><div class="wrapper"></div></a>
-
-	
-    <!-- Page Content -->
-    <div class="container">
-
-	<div class="boxi" style="display:none;">
-	
-	<textarea rows="4" cols="50" style="color: black; background-color: transparent;" >
-	Mejor que hacer esot seria mejor un boton, desp carga ahi, ya que dos pasos esta de mas...
-</textarea>
-		<select>
-		<option value="volvo">Tema 1</option>
-		<option value="saab">Tema 2</option>
-		<option value="opel">Tema 3</option>
-		<option value="audi">Tema 4</option>
-		</select>
-		<select>
-		<option value="volvo">Politico 1</option>
-		<option value="saab">Politico 2</option>
-		<option value="opel">Politico 3</option>
-		<option value="audi">Todos</option>
-		</select>
-	</div>
-	
-        <img src="./img/FICHA.jpg" alt="Smiley face" width="60%" height="" style="margin-left: 20%;margin-top: 40px;">
-
-           
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="" style="float:left">
-                    <p>Copyright &copy; Todo los derechos reservados 2015</p>
-                </div>
-				<div class="" style="float:right">
-					<a href="http://cabildear.org/">Quienes Somos</a>
-					<a href="http://cabildear.org/">Como Funciona</a>
-				</div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
