@@ -49,6 +49,16 @@ function getAdherentes() {
     return $adherentes;
 }
 
+function getLegisladores() {
+    global $db;
+    $sql = 'SELECT l.id, l.nombre, l.apellido, l.descripcion, p.titulo AS partido, l.mail, l.twitter, l.facebook, l.telefono, l.ddjj, l.web, l.foto,  l.proyectos, l.creacion, l.ultima_actividad FROM legisladores AS l, partidos AS p WHERE p.id = l.partido_id;';
+    $query = $db->prepare($sql);
+    $query->execute();
+    $legisladores = $query->fetchAll(PDO::FETCH_ASSOC);
+    
+    return $legisladores;
+}
+
 /**
  * Replaces double line-breaks with paragraph elements.
  *
