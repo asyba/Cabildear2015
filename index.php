@@ -88,7 +88,7 @@ $app->get (
     '/login/twitter',
     function () use ($app) {
         require_once('includes/twitteroauth/twitteroauth.php');
-        
+        require_once('includes/twitteroauth/OAuth.php');
         if(isset($_SESSION['name']) && isset($_SESSION['twitter_id'])) { //check whether user already logged in with twitter
             echo "Name :".$_SESSION['name']."<br>";
             echo "Twitter ID :".$_SESSION['twitter_id']."<br>";
@@ -102,6 +102,7 @@ $app->get (
                 $token = $request_token['oauth_token'];
                 $_SESSION['request_token'] = $token ;
                 $_SESSION['request_token_secret'] = $request_token['oauth_token_secret'];
+
                 
                 switch ($connection->http_code) {
                     case 200:
@@ -112,6 +113,7 @@ $app->get (
                         break;
                     default:
                         echo "Coonection with twitter Failed";
+                        $app->redirect($url);
                         break;
                 }
             } else {  //error receiving request token

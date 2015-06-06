@@ -66,7 +66,7 @@
                 if (!isset($_SESSION['name'])) {
                 ?>
 				<li style="padding-top: 30px;">
-                        <a href="login.php">Ingresar</a>
+                        <a href="<?php getURL('/login/twitter');?>">Ingresar</a>
                     </li>
                 <?php
 
