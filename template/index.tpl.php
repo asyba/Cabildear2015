@@ -169,116 +169,37 @@
                 </div>
             </div> <!-- #legisladoresBox -->
             
-            <div id="propuestasBox">
+            <div id="propuestasBox">          
                 <div class="container">
                   <div class="row">
                     <div class="col-md-12">
                         <ul class="thumbnails" id="hover-cap-4col">
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Share" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
+                            
+                            <?php 
+            
+                            $propuestas = getPropuestas(); 
+                            foreach ($propuestas as $propuesta) {
+                                ?>
+                                <li class="col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="caption">
+                                             <h4><?php echo $propuesta['titulo']; ?></h4>
+                                             <?php echo $propuesta['descripcion']; ?>
+                                            <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                                <a href="#" rel="tooltip" title="Share" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                            </p>
+                                        </div>
+                                        <?php if (!empty($propuesta['imagen'])): ?>
+                                            <img src="<?php echo $propuesta['imagen']?>" alt="ALT NAME" class="img-responsive">
+                                        <?php else: ?>
+                                            <img src="<?php getURL('/lib/img/fondo.png');?>" alt="ALT NAME" class="img-responsive">
+                                        <?php endif; ?>
                                     </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                         <h4>Caption Title</h4>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt.</p>
-                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
-                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
-                                </div>
-                                 <h4>Item Name</h4>
-                            </li>	
+                                     <h4><?php echo $propuesta['titulo']; ?></h4>
+                                </li>
+                                <?php
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -287,43 +208,20 @@
             
             <hr />
 		
-		<div id="adherentesBox" class="classHide">
-		     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="<?php getURL('/legislador/julio');?>">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/julio.jpg');?>" alt="">
-                        <span><b>Julio Alberto Agosti</b></span>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/orlando.jpg');?>" alt="">
-                        <span><b>Orlando Arduh</b></span>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/roberto.jpg');?>" alt="">
-                        <span><b>Roberto Cesar Birri</b></span>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
-                        <span><b>Ruben Alberto Borello</b></span>
-                </a>
-            </div>
-			 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
-                        <span><b>Ruben Alberto Borello</b></span>
-                </a>
-            </div>
-			 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
-                        <span><b>Ruben Alberto Borello</b></span>
-                </a>
-            </div>
+		<div id="adherentesBox" class="classHide">       
+            <?php 
+            $adherentes = getAdherentes(); 
+            foreach ($adherentes as $adherente) {
+                ?>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="<?php echo $adherente['logo'];?>">
+                        <img class="img-responsive" src="<?php echo $adherente['logo'];?>" alt="">
+                            <span><b><?php echo $adherente['nombre'];?></b></span>
+                    </a>
+                </div>
+                <?php
+            }?>
+        
 		</div> <!-- #adherentesBox -->
             
         <div id="noticiasBox" class="classHide"></div><!-- #noticiasBox -->

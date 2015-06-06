@@ -1,7 +1,7 @@
 <?php
 try {
     $db = new PDO(
-        'mysql:host=localhost;dbname=cabildear',
+        'mysql:host=localhost;dbname=cabildear;charset=utf8',
         'root',
         ''
     );

@@ -12,7 +12,6 @@ require 'Slim/Slim.php';
 require 'config/database.php';
 require 'config/general.php';
 
-
 \Slim\Slim::registerAutoloader();
 
 /**
@@ -24,7 +23,7 @@ require 'config/general.php';
  * of setting names and values into the application constructor.
  */
 $app = new \Slim\Slim();
-
+$app->contentType('text/html; charset=utf-8');
 /**
  * Step 3: Define the Slim application routes
  *
@@ -88,9 +87,7 @@ $app->post (
 $app->get (
     '/login/twitter',
     function () use ($app) {
-        
         require_once('includes/twitteroauth/twitteroauth.php');
-        
         
         if(isset($_SESSION['name']) && isset($_SESSION['twitter_id'])) { //check whether user already logged in with twitter
             echo "Name :".$_SESSION['name']."<br>";
