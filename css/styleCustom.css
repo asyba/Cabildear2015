@@ -1,0 +1,58 @@
+.boxi{
+    /*border: 2px solid #a1a1a1;*/
+    padding: 60px 60px; 
+    background: #dddddd;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.classHide{
+	display:none;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+ul { list-style: none;}
+
+#hover-cap-4col .thumbnail {
+	position:relative;
+	overflow:hidden;	
+}
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	color:#fff !important;
+}
+
+
+a:hover{
+	color: #000 !important;
+}
+.wrapper {
+  margin-top: 59px;
+  background-image: url(http://cabildear.org/img/banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 450px;
+}
+
+.btn-primary {
+    border-color: #FFF !important;
+}
+@media (min-width:1200px){
+	.wp{
+		margin-left: 5%;
+		font-size: 20px;
+	}
+}
+@media (min-width:992px){
+	.wp{
+		/*margin-left: 10% ;*/
+		/*font-size: 16px ;*/
+	}
+}
