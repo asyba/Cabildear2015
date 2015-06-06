@@ -7,8 +7,8 @@
                     <p>Copyright &copy; Todo los derechos reservados 2015</p>
                 </div>
 				<div class="" style="float:right">
-					<a href="http://cabildear.org/">Quienes Somos</a>
-					<a href="http://cabildear.org/">Como Funciona</a>
+					<a href="<?php getURL('/quienes-somos');?>">Quienes Somos</a>
+					<a href="<?php getURL('/como-funciona');?>">Como Funciona</a>
 				</div>
             </div>
         </footer>
@@ -17,10 +17,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="<?php getURL('lib/js/jquery.js');?>"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php getURL('js/bootstrap.min.js');?>"></script>
 
 </body>
 

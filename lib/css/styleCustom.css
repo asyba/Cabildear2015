@@ -33,3 +33,119 @@ a:hover{
 		/*font-size: 16px ;*/
 	}
 }
+
+
+body{
+    margin-left: 18px;
+    margin-top: 18px;
+}
+
+body{
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color : #474747;
+    background-color: transparent;
+}
+
+select, option{
+    font-size:13px;
+}
+
+ol.phpfmg_form{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+ol.phpfmg_form input, ol.phpfmg_form textarea, ol.phpfmg_form select{
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ol.phpfmg_form li{
+    margin-bottom:5px;
+    clear:both;
+    display:block;
+    overflow:hidden;
+	width: 100%
+}
+
+
+.form_field, .form_required{
+    font-weight : bold;
+}
+
+.form_required{
+    color:red;
+    margin-right:8px;
+}
+
+.field_block_over{
+}
+
+.form_submit_block{
+    padding-top: 3px;
+}
+
+.text_box,.text_select {
+    height: 32px;
+}
+
+.text_box, .text_area, .text_select {
+    min-width:160px;
+    max-width:300px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text_area{
+    height:80px;
+}
+
+.form_error_title{
+    font-weight: bold;
+    color: red;
+}
+
+.form_error{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form_error_highlight{
+    background-color: #F4F6E5;
+    border-bottom: 1px dashed #ff0000;
+}
+
+div.instruction_error{
+    color: red;
+    font-weight:bold;
+}
+
+hr.sectionbreak{
+    height:1px;
+    color: #ccc;
+}
+
+#one_entry_msg{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#frmFormMailContainer input[type="submit"]{
+    padding: 10px 25px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #FAFBFC;
+}
+
+#frmFormMailContainer input[type="submit"]:hover{
+    background-color: #E4F0F8;
+}

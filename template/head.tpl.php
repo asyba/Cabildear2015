@@ -10,10 +10,10 @@
     <title>Cabildear</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/lib/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/lib/css/styleCustom.css" rel="stylesheet">
+    <link href="<?php getURL('/lib/css/bootstrap.min.css')?>" rel="stylesheet">
+	<link href="<?php getURL('/lib/css/styleCustom.css')?>" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="/lib/css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="<?php getURL('/lib/css/thumbnail-gallery.css')?>" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>           
-				<a href="/"><img src="/lib/img/logo2.png" alt="Smiley face" width="400" height="120"></a>
+				<a href="<?php getURL('/');?>"><img src="<?php getURL('/lib/img/logo2.png');?>" alt="Smiley face" width="400" height="120"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

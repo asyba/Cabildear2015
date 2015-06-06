@@ -7,7 +7,10 @@
  *
  * If you are using Composer, you can skip this step.
  */
+session_start();
 require 'Slim/Slim.php';
+require 'config/database.php';
+require 'config/general.php';
 
 \Slim\Slim::registerAutoloader();
 
@@ -47,6 +50,16 @@ $app->get(
     function () {
         require_once('template/head.tpl.php');
         require_once('template/form.tpl.php');
+        require_once('template/foot.tpl.php');
+    }
+);
+
+// GET route
+$app->get(
+    '/legislador/:legislador',
+    function ($legislador) {
+        require_once('template/head.tpl.php');
+        require_once('template/legislador.tpl.php');
         require_once('template/foot.tpl.php');
     }
 );

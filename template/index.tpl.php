@@ -1,4 +1,4 @@
-<a href="http://cabildear.org/form.php"><div class="wrapper"></div></a>
+<a href="<?php getURL('/form');?>"><div class="wrapper"></div></a>
 
 	
     <!-- Page Content -->
@@ -36,85 +36,85 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="http://cabildear.org/ficha.php">
-                    <img class="img-responsive" src="/lib/img/julio.jpg" alt="">
+                <a class="thumbnail" href="<?php getURL('/legislador/julio');?>">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/julio.jpg');?>" alt="">
                         <span><b>Julio Alberto Agosti</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/orlando.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/orlando.jpg');?>" alt="">
                         <span><b>Orlando Arduh</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/roberto.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/roberto.jpg');?>" alt="">
                         <span><b>Roberto Cesar Birri</b></span>
                     <br><span>Partido Socialista</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/ruben.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
                         <span><b>Ruben Alberto Borello</b></span>
                     <br><span>Frente Renovador</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/graciela.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/graciela.jpg');?>" alt="">
                         <span><b>Graciela Susana Brarda</b></span>
                     <br><span>Unión por Córdoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/luis.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/luis.jpg');?>" alt="">
                         <span><b>Luis Alberto Brouwer de Koning</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/anselmo.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/anselmo.jpg');?>" alt="">
                         <span><b>Anselmo Emilio Bruno</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/MariaElsa.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/MariaElsa.jpg');?>" alt="">
                         <span><b>Maria Elsa Caffaratti</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/mariaCarmen.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/mariaCarmen.jpg');?>" alt="">
                         <span><b>María del Carmen Ceballos</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/maria.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/maria.jpg');?>" alt="">
                         <span><b>María Amelia Chiofalo</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/juan.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/juan.jpg');?>" alt="">
                         <span><b>Juan Manuel Cid</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/edgar.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/edgar.jpg');?>" alt="">
                         <span><b>Edgardo Santiago Clavijo</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
@@ -122,42 +122,42 @@
             
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/rodrigo.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/rodrigo.jpg');?>" alt="">
                         <span><b>Rodrigo Alfredo de Loredo</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/mariaAlejandra.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/mariaAlejandra.jpg');?>" alt="">
                         <span><b>María Alejandra del Boca</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/carlos.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/carlos.jpg');?>" alt="">
                         <span><b>Carlos Alberto Felpeto</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/nadia.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/nadia.jpg');?>" alt="">
                         <span><b>Nadia Fernandez</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/ricardo.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/ricardo.jpg');?>" alt="">
                         <span><b>Ricardo Oscar Fonseca</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="/lib/img/marisa.jpg" alt="">
+                    <img class="img-responsive" src="<?php getURL('/lib/img/marisa.jpg');?>" alt="">
                         <span><b>Marisa Gamaggio Sosa</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
