@@ -1,75 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Cabildear</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styleCustom.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/thumbnail-gallery.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=289774607765195";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-   <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#FFF;border-color: #FFF;">
-        <div class="container" >
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>           
-				<a href="http://cabildear.org"><img src="./img/logo2.png" alt="Smiley face" width="400" height="120"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav wp" style="">
-					<li style="padding-top: 30px;">
-                        <a href="#">Habla con los legisladores</a>
-                    </li>
-                    <li style="padding-top: 30px;">
-                        <a href="#">Ver respuestas</a>
-                    </li style="padding-top: 30px;">
-                    <li style="padding-top: 30px;">
-                        <a href="#">Pedir audencia</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-	<a href="http://cabildear.org/form.php"><div class="wrapper"></div></a>
+<a href="http://cabildear.org/form.php"><div class="wrapper"></div></a>
 
 	
     <!-- Page Content -->
@@ -108,84 +37,84 @@
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="http://cabildear.org/ficha.php">
-                    <img class="img-responsive" src="./img/julio.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/julio.jpg" alt="">
                         <span><b>Julio Alberto Agosti</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/orlando.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/orlando.jpg" alt="">
                         <span><b>Orlando Arduh</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/roberto.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/roberto.jpg" alt="">
                         <span><b>Roberto Cesar Birri</b></span>
                     <br><span>Partido Socialista</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/ruben.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/ruben.jpg" alt="">
                         <span><b>Ruben Alberto Borello</b></span>
                     <br><span>Frente Renovador</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/graciela.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/graciela.jpg" alt="">
                         <span><b>Graciela Susana Brarda</b></span>
                     <br><span>Unión por Córdoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/luis.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/luis.jpg" alt="">
                         <span><b>Luis Alberto Brouwer de Koning</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/anselmo.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/anselmo.jpg" alt="">
                         <span><b>Anselmo Emilio Bruno</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/MariaElsa.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/MariaElsa.jpg" alt="">
                         <span><b>Maria Elsa Caffaratti</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/mariaCarmen.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/mariaCarmen.jpg" alt="">
                         <span><b>María del Carmen Ceballos</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/maria.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/maria.jpg" alt="">
                         <span><b>María Amelia Chiofalo</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/juan.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/juan.jpg" alt="">
                         <span><b>Juan Manuel Cid</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/edgar.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/edgar.jpg" alt="">
                         <span><b>Edgardo Santiago Clavijo</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
@@ -193,72 +122,46 @@
             
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/rodrigo.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/rodrigo.jpg" alt="">
                         <span><b>Rodrigo Alfredo de Loredo</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/mariaAlejandra.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/mariaAlejandra.jpg" alt="">
                         <span><b>María Alejandra del Boca</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/carlos.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/carlos.jpg" alt="">
                         <span><b>Carlos Alberto Felpeto</b></span>
                     <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/nadia.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/nadia.jpg" alt="">
                         <span><b>Nadia Fernandez</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/ricardo.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/ricardo.jpg" alt="">
                         <span><b>Ricardo Oscar Fonseca</b></span>
                     <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="./img/marisa.jpg" alt="">
+                    <img class="img-responsive" src="/lib/img/marisa.jpg" alt="">
                         <span><b>Marisa Gamaggio Sosa</b></span>
                     <br><span>Union por Cordoba</span></br>
                 </a>
             </div>
         </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="" style="float:left">
-                    <p>Copyright &copy; Todo los derechos reservados 2015</p>
-                </div>
-				<div class="" style="float:right">
-					<a href="http://cabildear.org/">Quienes Somos</a>
-					<a href="http://cabildear.org/">Como Funciona</a>
-				</div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+        
+        <hr />

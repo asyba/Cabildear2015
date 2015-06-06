@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +10,10 @@
     <title>Cabildear</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styleCustom.css" rel="stylesheet">
+    <link href="/lib/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/lib/css/styleCustom.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="/lib/css/thumbnail-gallery.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>           
-				<a href="http://cabildear.org"><img src="./img/logo2.png" alt="Smiley face" width="400" height="120"></a>
+				<a href="/"><img src="/lib/img/logo2.png" alt="Smiley face" width="400" height="120"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,60 +66,3 @@
         </div>
         <!-- /.container -->
     </nav>
-
-	<a href="http://cabildear.org/form.php"><div class="wrapper"></div></a>
-
-	
-    <!-- Page Content -->
-    <div class="container">
-
-	<div class="boxi" style="display:none;">
-	
-	<textarea rows="4" cols="50" style="color: black; background-color: transparent;" >
-	Mejor que hacer esot seria mejor un boton, desp carga ahi, ya que dos pasos esta de mas...
-</textarea>
-		<select>
-		<option value="volvo">Tema 1</option>
-		<option value="saab">Tema 2</option>
-		<option value="opel">Tema 3</option>
-		<option value="audi">Tema 4</option>
-		</select>
-		<select>
-		<option value="volvo">Politico 1</option>
-		<option value="saab">Politico 2</option>
-		<option value="opel">Politico 3</option>
-		<option value="audi">Todos</option>
-		</select>
-	</div>
-	
-        <img src="./img/FICHA.jpg" alt="Smiley face" width="60%" height="" style="margin-left: 20%;margin-top: 40px;">
-
-           
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="" style="float:left">
-                    <p>Copyright &copy; Todo los derechos reservados 2015</p>
-                </div>
-				<div class="" style="float:right">
-					<a href="http://cabildear.org/">Quienes Somos</a>
-					<a href="http://cabildear.org/">Como Funciona</a>
-				</div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
