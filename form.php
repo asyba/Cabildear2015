@@ -80,7 +80,7 @@ function phpfmg_form( $sErr = false ){
 
 
 
-<div id='frmFormMailContainer' style="padding-left: 30%;padding-top: 130px;">
+<div id='frmFormMailContainer' style="padding-left: 30%;padding-top: 130px;display:none">
 
 <form name="frmFormMail" id="frmFormMail" target="submitToFrame" action='<?php echo PHPFMG_ADMIN_URL . '' ; ?>' method='post' enctype='multipart/form-data' onsubmit='return fmgHandler.onSubmit(this);'>
 
@@ -150,7 +150,9 @@ function phpfmg_form( $sErr = false ){
 
 </div>
 
-
+<div style="margin-top: 10%;margin-left: 20%;">
+<iframe src="https://docs.google.com/forms/d/1IzQyXY8BdPhG9cOGwrQ3X962MhgqH_VlWTxJWEKmQRo/viewform?embedded=true" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+</div>
 <footer>
 
 
