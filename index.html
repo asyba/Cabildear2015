@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+    session_start();
+?>
 <html lang="en">
 
 <head>
@@ -16,7 +19,7 @@
 	<link href="css/styleCustom.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/thumbnail-gallery.css" rel="stylesheet">
-
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,6 +65,36 @@
                         <a href="#">Pedir audencia</a>
                     </li>
                 </ul>
+				
+				<?php
+
+                /* Verifica si se ha iniciado sesion */
+                if (empty ($_SESSION) === true) {
+                ?>
+
+                <ul class="nav navbar-nav wp" style="">
+                    <li style="padding-top: 30px;">
+                        <a href="login.php"><li style="width= 10">LOGGUEAR CON TWITTER</li></a>
+                    </li>
+                </ul>
+
+                <?php
+
+                }
+                else { ?>
+
+                    <ul class="nav navbar-nav wp" style="">
+                    <li style="padding-top: 30px;">
+                        <a href="#"><?php echo $_SESSION['name']; ?></a>
+                    </li>
+                </ul>
+
+                <?php 
+
+                }
+
+                ?>
+				
             </div>
 
             <!-- /.navbar-collapse -->
@@ -99,14 +132,20 @@
             <div class="col-lg-12">
                 <h1 class="page-header"></h1>
                     <div style="margin-bottom: 30px;">
-					<button type="button" class="btn btn-primary" style="background-color: rgb(0, 0, 0);">Propuestas</button>
-                    <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">M&aacute;s activos</button>
+					<button type="button" id="propuestaBoton" class="btn btn-primary" style="background-color: rgb(0, 0, 0);">Propuestas</button>
+                    <button type="button" id="legiladoresBoton"  class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Legisladores</button>
+					<button type="button" id="noticiasBoton" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Noticias</button>
+					<button type="button" id="adherentesBoton" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Adherentes</button>
+                                    </div>
+            </div>
+			<div class="col-lg-12" id="lesgiladoresBotones" style="display:none;">
                         <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por respuestas</button>
                             <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por proyectos presentados</button>
                                 <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por patrimonio</button>
-                                    </div>
             </div>
-
+			
+			<div id="legisladoresBox" class="classHide">
+			
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="http://cabildear.org/ficha.php">
                     <img class="img-responsive" src="./img/julio.jpg" alt="">
@@ -235,9 +274,171 @@
                 </a>
             </div>
         </div>
+		
+		<div id="propuestasBox">
+		<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+		<ul class="thumbnails" id="hover-cap-4col">
+    <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Share" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>
+    <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>
+ <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>
+ <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>
+ <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>
+ <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>
+ <li class="col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                 <h4>Caption Title</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                    <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                </p>
+            </div>
+            <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+        </div>
+         <h4>Item Name</h4>
+	</li>	
+	</ul>
+		
+		</div>
+		</div>
+		</div>
+		
+</div>
         <hr>
+		
+		<div id="adherentesBox" class="classHide">
+		     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="http://cabildear.org/ficha.php">
+                    <img class="img-responsive" src="./img/julio.jpg" alt="">
+                        <span><b>Julio Alberto Agosti</b></span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="./img/orlando.jpg" alt="">
+                        <span><b>Orlando Arduh</b></span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="./img/roberto.jpg" alt="">
+                        <span><b>Roberto Cesar Birri</b></span>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="./img/ruben.jpg" alt="">
+                        <span><b>Ruben Alberto Borello</b></span>
+                </a>
+            </div>
+			 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="./img/ruben.jpg" alt="">
+                        <span><b>Ruben Alberto Borello</b></span>
+                </a>
+            </div>
+			 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="./img/ruben.jpg" alt="">
+                        <span><b>Ruben Alberto Borello</b></span>
+                </a>
+            </div>
+		</div>
 
+		<div id="noticiasBox" class="classHide">
+		
+    
+</div>
+		</div>
+		
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -256,6 +457,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+	<script src="js/cabildear.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

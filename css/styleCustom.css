@@ -6,6 +6,29 @@
     border-radius: 25px;
 }
 
+.classHide{
+	display:none;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+ul { list-style: none;}
+
+#hover-cap-4col .thumbnail {
+	position:relative;
+	overflow:hidden;	
+}
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	color:#fff !important;
+}
+
+
 a:hover{
 	color: #000 !important;
 }
