@@ -61,24 +61,18 @@
                     <li style="padding-top: 30px;">
                         <a href="#">Pedir audencia</a>
                     </li>
-                </ul>
-				
-				<?php
-
+					<?php
                 /* Verifica si se ha iniciado sesion */
                 if (!isset($_SESSION['name'])) {
                 ?>
-
-                <ul class="nav navbar-nav wp" style="">
-                    <li style="padding-top: 30px;">
-                        <a href="<?php getURL('/login/twitter');?>"><li style="width= 10">LOGGUEAR CON TWITTER</li></a>
+				<li style="padding-top: 30px;">
+                        <a href="login.php">Ingresar</a>
                     </li>
-                </ul>
-
                 <?php
 
                 }
                 else { ?>
+
                     <ul class="nav navbar-nav wp" style="">
                     <li style="padding-top: 30px;">
                         <a href="#"><?php echo $_SESSION['name']; ?></a>
@@ -90,6 +84,9 @@
                 }
 
                 ?>
+                </ul>
+				
+				
 				
             </div>
 
