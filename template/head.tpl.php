@@ -36,61 +36,30 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-   <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:#FFF;border-color: #FFF;">
+   
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#FFF;border-color: #FFF;">
         <div class="container" >
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="padding-top: 10px;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>           
-				<a href="<?php getURL('/');?>"><img src="<?php getURL('/lib/img/logo2.png');?>" alt="Smiley face" width="400" height="120"></a>
+				<a href="<?php getURL('/');?>"><img src="<?php getURL('/lib/img/logo2.png');?>" alt="Smiley face" width="200" height="50"></a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav wp" style="">
-					<li style="padding-top: 30px;">
-                        <a href="#">Habla con los legisladores</a>
-                    </li>
-                    <li style="padding-top: 30px;">
-                        <a href="#">Ver respuestas</a>
-                    </li style="padding-top: 30px;">
-                    <li style="padding-top: 30px;">
-                        <a href="#">Pedir audencia</a>
-                    </li>
-					<?php
-                /* Verifica si se ha iniciado sesion */
-                if (!isset($_SESSION['name'])) {
-                ?>
-				<li style="padding-top: 30px;">
-                        <a href="<?php getURL('/login/twitter');?>">Ingresar</a>
-                    </li>
-                <?php
-
-                }
-                else { ?>
-
-                    <ul class="nav navbar-nav wp" style="">
-                    <li style="padding-top: 30px;">
-                        <a href="#"><?php echo $_SESSION['name']; ?></a>
-                    </li>
-                </ul>
-
-                <?php 
-
-                }
-
-                ?>
-                </ul>
-				
-				
-				
-            </div>
-
-            <!-- /.navbar-collapse -->
+	        
+			<form class="navbar-form navbar-right" role="search">
+			<a href="<?php getURL('/login/twitter');?>" class="btn btn-default navbar-btn" role="button">Ingresar</a>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Buscar..">
+				</div>
+				<button type="submit" class="btn btn-default">Buscar</button>
+			</form>            
+            </div>    
         </div>
         <!-- /.container -->
     </nav>
+    
