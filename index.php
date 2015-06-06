@@ -131,6 +131,38 @@ $app->get(
     }
 );
 
+$app->get(
+    '/registro',
+    function () {
+        require_once('template/head.tpl.php');
+        require_once('template/registro.tpl.php');
+        require_once('template/foot.tpl.php');
+    }
+);
+
+$app->post(
+    '/registro',
+    function () use ($app) {
+        if ($_POST['password'] != $_POST['password2']) {
+            session_destroy();
+            $app->redirect('/registro');
+        } else {
+            $salt = 'LB2SvJAtfwrEYqykb9x5qvNh';
+            $password = crypt($_POST['password'], $salt );
+            if ( crearUsuario($_POST['nombre'], $_POST['email'], $password)) {
+                $app->response()->header("Content-Type", "application/json");
+                $message='El usuario ha sido creado exitosamente';
+                print_r(json_encode($message));
+            } else {
+                $message='Error al crear usuario';
+                print_r(json_encode($message));
+            }
+            
+        }
+        
+    }
+);
+
 // PUT route
 $app->put(
     '/put',

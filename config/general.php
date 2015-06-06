@@ -26,6 +26,14 @@ function getURL ($url, $echo = true){
     }
 }
 
+function crearUsuario($nombre, $email, $password) {
+    global $db;
+
+    $sql="INSERT INTO usuarios (titulo, slug, email, password)  VALUES ('$nombre', '$nombre', '$email', '$password')";
+    $query = $db->prepare($sql);
+    return $query->execute();    
+}
+
 function getPropuestas() {
     global $db;
     $sql = 'SELECT * FROM propuestas';
