@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +12,11 @@
     <title>Cabildear</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php getURL('/lib/css/bootstrap.min.css')?>" rel="stylesheet">
-	<link href="<?php getURL('/lib/css/styleCustom.css')?>" rel="stylesheet">
+    <link href="<?php getURL('/lib/css/bootstrap.min.css');?>" rel="stylesheet">
+	<link href="<?php getURL('/lib/css/styleCustom.css');?>" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="<?php getURL('/lib/css/thumbnail-gallery.css')?>" rel="stylesheet">
-
+    <link href="<?php getURL('/lib/css/thumbnail-gallery.css');?>" rel="stylesheet">
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -60,6 +62,35 @@
                         <a href="#">Pedir audencia</a>
                     </li>
                 </ul>
+				
+				<?php
+
+                /* Verifica si se ha iniciado sesion */
+                if (!isset($_SESSION['name'])) {
+                ?>
+
+                <ul class="nav navbar-nav wp" style="">
+                    <li style="padding-top: 30px;">
+                        <a href="<?php getURL('/login/twitter');?>"><li style="width= 10">LOGGUEAR CON TWITTER</li></a>
+                    </li>
+                </ul>
+
+                <?php
+
+                }
+                else { ?>
+                    <ul class="nav navbar-nav wp" style="">
+                    <li style="padding-top: 30px;">
+                        <a href="#"><?php echo $_SESSION['name']; ?></a>
+                    </li>
+                </ul>
+
+                <?php 
+
+                }
+
+                ?>
+				
             </div>
 
             <!-- /.navbar-collapse -->

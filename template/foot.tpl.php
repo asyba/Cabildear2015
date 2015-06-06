@@ -20,7 +20,10 @@
     <script src="<?php getURL('lib/js/jquery.js');?>"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="<?php getURL('js/bootstrap.min.js');?>"></script>
+    <script src="<?php getURL('lib/js/bootstrap.min.js');?>"></script>
+    
+    
+    <script src="<?php getURL('lib/js/cabildear.js');?>"></script>
 
 </body>
 

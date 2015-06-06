@@ -27,141 +27,306 @@
 
             <div class="col-lg-12">
                 <h1 class="page-header"></h1>
-                    <div style="margin-bottom: 30px;">
-                    <button type="button" class="btn btn-primary" style="background-color: rgb(0, 0, 0);">M&aacute;s activos</button>
-                        <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por respuestas</button>
-                            <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por proyectos presentados</button>
-                                <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por patrimonio</button>
-                                    </div>
+                <div style="margin-bottom: 30px;">
+					<button type="button" id="propuestaBoton" class="btn btn-primary" style="background-color: rgb(0, 0, 0);">Propuestas</button>
+                    <button type="button" id="legiladoresBoton"  class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Legisladores</button>
+					<button type="button" id="noticiasBoton" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Noticias</button>
+					<button type="button" id="adherentesBoton" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Adherentes</button>
+                </div>
             </div>
+			<div class="col-lg-12" id="lesgiladoresBotones" style="display:none;">
+                <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por respuestas</button>
+                <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por proyectos presentados</button>
+                <button type="button" class="btn btn-primary" style="background-color: rgb(189, 226, 221);color: #000;">Por patrimonio</button>
+            </div>
+            <div id="legisladoresBox" class="classHide">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="<?php getURL('/legislador/julio');?>">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/julio.jpg');?>" alt="">
+                            <span><b>Julio Alberto Agosti</b></span>
+                        <br><span>Frente Civico</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/orlando.jpg');?>" alt="">
+                            <span><b>Orlando Arduh</b></span>
+                        <br><span>Union Civica Radical</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/roberto.jpg');?>" alt="">
+                            <span><b>Roberto Cesar Birri</b></span>
+                        <br><span>Partido Socialista</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
+                            <span><b>Ruben Alberto Borello</b></span>
+                        <br><span>Frente Renovador</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/graciela.jpg');?>" alt="">
+                            <span><b>Graciela Susana Brarda</b></span>
+                        <br><span>Unión por Córdoba</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/luis.jpg');?>" alt="">
+                            <span><b>Luis Alberto Brouwer de Koning</b></span>
+                        <br><span>Union Civica Radical</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/anselmo.jpg');?>" alt="">
+                            <span><b>Anselmo Emilio Bruno</b></span>
+                        <br><span>Union Civica Radical</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/MariaElsa.jpg');?>" alt="">
+                            <span><b>Maria Elsa Caffaratti</b></span>
+                        <br><span>Union Civica Radical</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/mariaCarmen.jpg');?>" alt="">
+                            <span><b>María del Carmen Ceballos</b></span>
+                        <br><span>Union por Cordoba</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/maria.jpg');?>" alt="">
+                            <span><b>María Amelia Chiofalo</b></span>
+                        <br><span>Union por Cordoba</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/juan.jpg');?>" alt="">
+                            <span><b>Juan Manuel Cid</b></span>
+                        <br><span>Union por Cordoba</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/edgar.jpg');?>" alt="">
+                            <span><b>Edgardo Santiago Clavijo</b></span>
+                        <br><span>Frente Civico</span></br>
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/rodrigo.jpg');?>" alt="">
+                            <span><b>Rodrigo Alfredo de Loredo</b></span>
+                        <br><span>Union Civica Radical</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/mariaAlejandra.jpg');?>" alt="">
+                            <span><b>María Alejandra del Boca</b></span>
+                        <br><span>Frente Civico</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/carlos.jpg');?>" alt="">
+                            <span><b>Carlos Alberto Felpeto</b></span>
+                        <br><span>Union Civica Radical</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/nadia.jpg');?>" alt="">
+                            <span><b>Nadia Fernandez</b></span>
+                        <br><span>Union por Cordoba</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/ricardo.jpg');?>" alt="">
+                            <span><b>Ricardo Oscar Fonseca</b></span>
+                        <br><span>Frente Civico</span></br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="<?php getURL('/lib/img/marisa.jpg');?>" alt="">
+                            <span><b>Marisa Gamaggio Sosa</b></span>
+                        <br><span>Union por Cordoba</span></br>
+                    </a>
+                </div>
+            </div> <!-- #legisladoresBox -->
+            
+            <div id="propuestasBox">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                        <ul class="thumbnails" id="hover-cap-4col">
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Share" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>
+                            <li class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                         <h4>Caption Title</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt.</p>
+                                        <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="glyphicon glyphicon-eye-open"></i></a> 
+                                            <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="glyphicon glyphicon-share"></i></a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/600x400" alt="ALT NAME" class="img-responsive">
+                                </div>
+                                 <h4>Item Name</h4>
+                            </li>	
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div><!-- #propuestasBox -->
+            
+            <hr />
+		
+		<div id="adherentesBox" class="classHide">
+		     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="<?php getURL('/legislador/julio');?>">
                     <img class="img-responsive" src="<?php getURL('/lib/img/julio.jpg');?>" alt="">
                         <span><b>Julio Alberto Agosti</b></span>
-                    <br><span>Frente Civico</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="<?php getURL('/lib/img/orlando.jpg');?>" alt="">
                         <span><b>Orlando Arduh</b></span>
-                    <br><span>Union Civica Radical</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="<?php getURL('/lib/img/roberto.jpg');?>" alt="">
                         <span><b>Roberto Cesar Birri</b></span>
-                    <br><span>Partido Socialista</span></br>
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
                         <span><b>Ruben Alberto Borello</b></span>
-                    <br><span>Frente Renovador</span></br>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/graciela.jpg');?>" alt="">
-                        <span><b>Graciela Susana Brarda</b></span>
-                    <br><span>Unión por Córdoba</span></br>
+                    <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
+                        <span><b>Ruben Alberto Borello</b></span>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/luis.jpg');?>" alt="">
-                        <span><b>Luis Alberto Brouwer de Koning</b></span>
-                    <br><span>Union Civica Radical</span></br>
+                    <img class="img-responsive" src="<?php getURL('/lib/img/ruben.jpg');?>" alt="">
+                        <span><b>Ruben Alberto Borello</b></span>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/anselmo.jpg');?>" alt="">
-                        <span><b>Anselmo Emilio Bruno</b></span>
-                    <br><span>Union Civica Radical</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/MariaElsa.jpg');?>" alt="">
-                        <span><b>Maria Elsa Caffaratti</b></span>
-                    <br><span>Union Civica Radical</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/mariaCarmen.jpg');?>" alt="">
-                        <span><b>María del Carmen Ceballos</b></span>
-                    <br><span>Union por Cordoba</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/maria.jpg');?>" alt="">
-                        <span><b>María Amelia Chiofalo</b></span>
-                    <br><span>Union por Cordoba</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/juan.jpg');?>" alt="">
-                        <span><b>Juan Manuel Cid</b></span>
-                    <br><span>Union por Cordoba</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/edgar.jpg');?>" alt="">
-                        <span><b>Edgardo Santiago Clavijo</b></span>
-                    <br><span>Frente Civico</span></br>
-                </a>
-            </div>
+		</div> <!-- #adherentesBox -->
             
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/rodrigo.jpg');?>" alt="">
-                        <span><b>Rodrigo Alfredo de Loredo</b></span>
-                    <br><span>Union Civica Radical</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/mariaAlejandra.jpg');?>" alt="">
-                        <span><b>María Alejandra del Boca</b></span>
-                    <br><span>Frente Civico</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/carlos.jpg');?>" alt="">
-                        <span><b>Carlos Alberto Felpeto</b></span>
-                    <br><span>Union Civica Radical</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/nadia.jpg');?>" alt="">
-                        <span><b>Nadia Fernandez</b></span>
-                    <br><span>Union por Cordoba</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/ricardo.jpg');?>" alt="">
-                        <span><b>Ricardo Oscar Fonseca</b></span>
-                    <br><span>Frente Civico</span></br>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" style="opacity: 0.3;">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="<?php getURL('/lib/img/marisa.jpg');?>" alt="">
-                        <span><b>Marisa Gamaggio Sosa</b></span>
-                    <br><span>Union por Cordoba</span></br>
-                </a>
-            </div>
-        </div>
+        <div id="noticiasBox" class="classHide"></div><!-- #noticiasBox -->
+    </div>
         
-        <hr />
+    <hr />
